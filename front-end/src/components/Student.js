@@ -142,7 +142,7 @@ useEffect(() => {
               </div>
                  <div>
               <button   className="btn btn-primary mt-4"  onClick={save}>Register</button> 
-              <button   className="btn btn-warning mt-4"  onClick={update}>Update</button>
+              <button   className="btn btn-warning mt-4 mx-3"  onClick={update}>Update</button>
               </div>  
 
               
@@ -153,7 +153,7 @@ useEffect(() => {
 <table className="table table-dark mt-5" align="center">
   <thead>
     <tr>
-      <th scope="col">Student Id</th>
+      <th className="px-3" scope="col">Student Id</th>
       <th scope="col">Student Name</th>
       <th scope="col">Address</th>
       <th scope="col">Fee</th>
@@ -166,13 +166,13 @@ useEffect(() => {
             return(
             <tbody>
                 <tr>
-                <th scope="row">{student.id} </th>
+                <th className="px-5" scope="row">{student.id} </th>
                 <td>{student.name}</td>
                 <td>{student.address}</td>
                 <td>{student.fee}</td>        
                 <td>
                     <button type="button" className="btn btn-warning"  onClick={() => editStudent(student)} >Edit</button>  
-                    <button type="button" className="btn btn-danger" onClick={() => DeleteStudent(student.id)}>Delete</button>
+                    <button type="button" className="btn btn-danger mx-2" onClick={() => DeleteStudent(student.id)}>Delete</button>
                 </td>
                 </tr>
             </tbody>
